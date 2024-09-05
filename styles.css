@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefbf5;
+    color: #333333;
+    text-align: center;
+}
+
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4dab3;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+
+nav {
+    background-color: #e4d6f5;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+
+.attraction {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.attraction img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 400px;
+}
+
+.attraction p {
+    font-size: small;
+    padding: 10px;
+}
+
+
+.attractions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.attractions-grid .attraction {
+    flex: 1 1 calc(50% - 20px); 
+    max-width: calc(50% - 20px); 
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.attractions-grid .attraction img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 200px; 
+}
+
+.attractions-grid .attraction p {
+    font-size: 1rem;
+    padding-top: 10px;
+    font-size: small;
+    font-style: italic;
+}
+
+.form-title{
+    margin-top: 20px ;
+    background-color: #f4dab3;
+    padding: 20px;
+}
+
+
+.contact-form {
+    background-color: #f4dab3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #e21e1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #c51919;
+}
+
+
+footer {
+    background-color: #e4d6f5;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #333;
+    font-size: 0.9rem;
+}
+
+
+#scrollToTopBtn {
+  
+    background-color: #e21e1e;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #c51919;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
